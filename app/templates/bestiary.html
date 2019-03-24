@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Bestiary{% endblock %}
+{% block content %}
+<div id="wrapper">
+    <h2 style="text-align: center;">Browse bestiary</h2>
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>HP</th>
+            <th>AC</th>
+            <th>Size</th>
+            <th class="hide-mobile">Aligned</th>
+            <th>Rating</th>
+        </tr>
+        {% for v in data %}
+            <tr>
+                <td align="center"><a href="/reference/bestiary/{{v['name']}}"><b>{{v['name'].replace("_", " ").title()}}</b></a></td>
+                <td align="center">{{v['hp']}}</td>
+                <td align="center">{{v['ac']}}</td>
+                <td align="center">{{v['size'].title()}}</td>
+                <td align="center" class="hide-mobile">{{v['aligned']}}</td>
+                <td align="center">{{v['cr']}}</td>
+            </tr>
+        {% endfor %}   
+    </table>
+</div>
+{% endblock %}

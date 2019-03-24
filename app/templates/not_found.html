@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>404 Not Found</title>
+        <meta charset="UTF-8">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/base.css') }}">
+    </head>
+    <body>
+        <h2 style="font-family: Helvetica, sans-serif; margin-left: 1em;">404: Guys... there's nothing here... Please...</h2>
+        <div>
+            <img src="{{ url_for('static', filename='just_a_tub.jpeg' )}}" class="image-center" style="margin-bottom:20px;">
+            <div>
+                <p style="font-style: italic; font-size: 12px; text-align: center;">Image By 
+                    <span>
+                        <a href="https://www.instagram.com/cropalitet/">Ana (@cropalitet)</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

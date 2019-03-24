@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Spells Table{% endblock %}
+{% block content %}
+<div id="wrapper">
+    {% if name %}
+        <h2 style="text-align: center;">{{name}} Spells</h2>
+    {% else %}
+        <h2>Spells</h2>
+    {% endif %}
+    <div class="line_div"></div>
+    <br>
+    {% for k,v in data|dictsort %}
+        {% if v|length > 0 %}
+            {% if k==0 %}
+            <h3><b>Cantrips</b></h3>
+            <hr>
+            {% else %}
+            <h3><b>Level {{k}}</b></h3>
+            <hr>                
+            {% endif %}
+            <table>
+                <tr>               
+                    <th>Name</th>
+                    <th class="hide-mobile">School</th>
+                    <th>Components</th>
+                    <th>Time</th>
+                    <th class="hide-mobile">Duration</th>
+                    <th>Concentration</th>
+                    <th>Ritual</th>
+                </tr>
+                {% for spell in v %}                
+                <tr>
+                    <td><a style="font-weight: bold;" href="/reference/spells/view/{{spell['url_name']}}">{{spell['name']}}</a></td>
+                    <td class="hide-mobile">{{spell['school']}}</td>
+                    <td>{{spell['components'].split("(")[0]}}</td>
+                    <td>{{spell['time']}}</td>
+                    <td class="hide-mobile">{{spell['duration']}}</td>
+                    <td><b style="color:#580000;">{{spell['concentration'].title()}}</b></td>
+                    <td><b style="color:#580000;">{{spell['ritual'].title()}}</b></td>
+                </tr>                        
+                {% endfor %}   
+            </table>
+            <br>
+        {% endif %}
+    {% endfor %}   
+</div>
+{% endblock %}

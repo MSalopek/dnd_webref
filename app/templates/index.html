@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Reference Index{% endblock %}
+{% block content %}
+<div id="wrapper">
+    <h2 style="font-family: Helvetica, sans-serif; font-size: 1.5em;">Welcome to D&D5e quick reference materials</h2>
+    <p>Please use the Menu icon to nagivate.</p>
+
+    <div>
+        <img src="{{ url_for('static', filename='just_a_tub.jpeg' )}}" class="image-center">
+        <p style="font-style: italic; font-size: 12px; text-align: center;">Image By 
+            <span>
+                <a href="https://www.instagram.com/cropalitet/">Ana (@cropalitet)</a>
+            </span>
+        </p>
+    </div>
+    <p style="font-style:italic; font-size:0.7em; text-align:center;">
+        Materials listed here are for my personal use only. I do not own this content.
+        This content is property od Wizards of the Coast LLC and is used under Fan Content Policy.
+        This reference guide should IS NOT a replacement for the books. 
+        If you like the game, please support the authors by buying the books.
+    </p>
+</div>
+{% endblock %}

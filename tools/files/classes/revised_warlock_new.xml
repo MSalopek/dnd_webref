@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5">   
+    <class>
+        <name>Warlock</name>
+        <hd>8</hd>
+        <savingThrows>WIS, CHA</savingThrows>
+        <spellAbility>CHA</spellAbility>
+
+        <autolevel level="0">
+            <feature>
+                <name>Starting Proficiencies</name>
+                <text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
+                <text>Armor: light armor</text>
+                <text>Weapons: simple weapons</text>
+                <text>Tools: none</text>
+                <text>Skills: Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion</text>
+            </feature>
+            <feature>
+                <name>Starting Equipment</name>
+                <text>You start with the following items, plus anything provided by your background.</text>
+                <text />
+                <text>• (a) a light crossbow and 20 bolts or (b) any simple weapon</text>
+                <text>• (a) a component pouch or (b) an arcane focus</text>
+                <text>• (a) a scholar's pack or (b) a dungeoneer's pack</text>
+                <text>• Leather armor, any simple weapon, and two daggers</text>
+                <text />
+                <text>Alternatively, you may start with 4d4 x 10 gp to buy your own equipment.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="1">
+			<asi>0</asi>
+			<prof_bonus>2</prof_bonus>
+			<invocations_known>0</invocations_known>
+			<slots>2,1,0,0,0,0</slots>
+			<spells_known>2</spells_known>
+            <feature>
+                <name>Otherworldly Patron</name>
+                <text>At 1st level, you have struck a bargain with an otherworldly being of your choice - the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Archfey">
+				<name>Expanded Spell List</name>
+				<text>1st - Faerie Fire, Sleep</text>
+				<text>2nd - Calm Emotions, Phantasmal Force</text>
+				<text>3rd - Blink, Plant Growth</text>
+				<text>4th - Dominate Beast, Greater Invisibility</text>
+				<text>5th - Dominate Person, Seeming</text>
+			</feature>
+			<feature subclass="Otherworldly Patron: The Fiend">
+				<name>Expanded Spell List</name>
+				<text>1st - Burning Hands, Command</text>
+				<text>2nd - Blindness/Deafness, Scorching Ray</text>
+				<text>3rd - Fireball, Stinking Cloud</text>
+				<text>4th - Fire Shield, Wall Of Fire</text>
+				<text>5th - Flame Strike, Hallow</text>
+			</feature>
+			<feature subclass="Otherworldly Patron: The Great Old One">
+				<name>Expanded Spell List</name>
+				<text>1st - Dissonant Whispers, Tasha'S Hideous Laughter</text>
+				<text>2nd - Detect Thoughts, Phantasmal Force</text>
+				<text>3rd - Clairvoyance, Sending</text>
+				<text>4th - Dominate Beast, Evard'S Black Tentacles</text>
+				<text>5th - Dominate Person, Telekinesis</text>
+			</feature>
+			<feature subclass="Otherworldly Patron: The Undying">
+				<name>Expanded Spell List</name>
+				<text>1st - False Life, Ray Of Sickness</text>
+				<text>2nd - Blindness/Deafness, Silence</text>
+				<text>3rd - Feign Death, Speak With Dead</text>
+				<text>4th - Aura Of Life, Death Ward</text>
+				<text>5th - Contagion, Legend Lore</text>
+			</feature>
+			<feature subclass="Otherwordly Patron: The Hexblade">
+				<name>Expanded Spell List</name>
+				<text>1st - Shield, Wrathful Smite</text>
+				<text>2nd - Blur, Branding Smite</text>
+				<text>3rd - Blink, Elemental Weapon</text>
+				<text>4th - Phantasmal Killer, Staggering Smite</text>
+				<text>5th - Banishing Smite, Cone of Cold</text>
+			</feature>
+			<feature subclass="Otherwordly Patron: The Celestial">
+				<name>Expanded Spell List</name>
+				<text>1st - Guiding Bolt, Cure Wounds</text>
+				<text>2nd - Flaming Sphere, Lesser Restoration</text>
+				<text>3rd - Daylight, Revivify</text>
+				<text>4th - Guardian of Faith, Wall of Fire</text>
+				<text>5th - Flame Strike, Greater Restoration</text>
+			</feature>
+			<feature subclass="Otherworldly Patron: The Archfey">
+				<name>Fey Presence</name>
+                <text>Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a short or long rest.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Fiend">
+				<name>Dark One's Blessing</name>
+                <text>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Great Old One">
+				<name>Awakened Mind</name>
+                <text>Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Undying">
+				<name>Among the Dead</name>
+                <text>Starting at 1st level, you learn the spare the dying cantrip, which counts as a warlock cantrip for you. You also have advantage on saving throws against any disease.</text>
+                <text>    Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom saving throw against your spell save DC (an undead needn't make the save when it includes you in an area effect, such as the explosion of fireball). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a succesful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell.</text>
+            </feature>
+			<feature subclass="Otherwordly Patron: The Hexblade">
+				<name>Hex Warrior</name>
+				<text>At 1st level, you gain proficiency with medium armor, shields, and martial weapons.</text>
+				<text>Additionally, whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. If you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon's type.</text>
+			</feature>
+			<feature subclass="Otherwordly Patron: The Hexblade">
+				<name>Hexblade's Curse</name>
+				<text>Starting at 1st level, as a bonus action, choose one creature you can see within 30 feet of you. The curse ends early if the target dies, you die, or you are incapacitated. The target is cursed for 1 minute. Until the curse ends, you gain the following benefits:</text>
+				<text>    • You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.</text>
+				<text>    • Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.</text>
+				<text>    • If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier.</text>
+				<text>You can't use this feature again until you finish a short or long rest.</text>
+			</feature>
+			<feature subclass="Otherwordly Patron: The Celestial">
+				<name>Bonus Cantrips</name>
+				<text>At 1st level, you learn the Sacred Flame and Light cantrips. They count as warlock cantrips for you, but they don't count against your number of cantrips known.</text>
+			</feature>
+			<feature subclass="Otherwordly Patron: The Celestial">
+				<name>Healing Light</name>
+				<text>At 1st level, you have a pool of d6s that you can spend to heal others. The number of dice in the pool equals 1 + your warlock level.</text>
+				<text>As a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, add them together, and restore a number of hit points equal to the total.</text>
+				<text>Your pool regains all expended dice when you finish a long rest.</text>
+			</feature>
+            <feature>
+                <name>Pact Magic</name>
+                <text>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the warlock spell list.</text>
+                <text />
+                <text>Cantrips</text>
+                <text>You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.</text>
+                <text />
+                <text>Spell Slots</text>
+                <text>The Warlock table shows how many spell slots you have. The table also shows what the level of those spell slots. You cast spells only on the level you have available. You regain all expended spell slots when you after a short or long rest.</text>
+                <text />
+                <text>Spells Known of 1st Level and Higher</text>
+                <text>At 1st level, you know two 1st-level spells of your choice from the warlock spell list.</text>
+                <text>    You learn a new warlock spell every time you gain a level in this class. The level of the spell you choose must not be greater than the spell slot level you have available.</text>
+                <text>    Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.</text>
+                <text />
+                <text>Spellcasting Ability</text>
+                <text>Charisma is your spellcasting ability for your warlock spells.</text>
+                <text>    Spell save DC: 8 + Proficiency bonus + Charisma modifier</text>
+                <text>    Spell attack mod: Proficiency bonus + Charisma modifier</text>
+                <text />
+                <text>Spellcasting Focus</text>
+                <text>You can use an arcane focus as a spellcasting focus for your warlock spells.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="2">
+			<asi>0</asi>
+			<prof_bonus>2</prof_bonus>
+			<invocations_known>2</invocations_known>
+			<slots>2,2,0,0,0,0</slots>
+			<spells_known>3</spells_known>
+            <feature>
+                <name>Eldritch Invocations</name>
+                <text>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</text>
+                <text>    At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice.</text>
+                <text>    Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level. A level prerequisite in an invocation refers to warlock level, not character level.</text>
+				<text>If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.</text>
+				<text />
+                <text>• Agonizing Blast</text>
+				<text>Prerequisite: Eldritch Blast cantrip</text>
+				<text>When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.</text>
+				<text />
+				<text>• Armor of Shadows</text>
+				<text>You can cast Mage Armor on yourself at will, without expending a spell slot or material components.</text>
+				<text />
+				<text>• Aspect of the Moon</text>
+				<text>Prerequisite: Pact of the Tome</text>
+				<text>You no longer need to sleep and can't be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours doing light activity, such as reading your Book of Shadows and keeping watch.</text>
+				<text />
+				<text>• Beast Speech</text>
+				<text>You can cast Speak with Animals at will, without expending a spell slot.</text>
+				<text />
+				<text>• Beguiling Influence</text>
+				<text>You gain proficiency in the Deception and Persuasion skills.</text>
+				<text />
+				<text>• Book of Ancient Secrets</text>
+				<text>Prerequisite: Pact of the Tome feature</text>
+				<text>You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag. On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it.</text>
+				<text />
+				<text>• Devil's Sight</text>
+				<text>You can see normally in darkness, both magical and non-magical, to a distance of 120 feet.</text>
+				<text />
+				<text>• Eldritch Sight</text>
+				<text>You can cast Detect Magic at will, without expending a spell slot.</text>
+				<text />
+				<text>• Eldritch Spear</text>
+				<text>Prerequisite: Eldritch Blast cantrip</text>
+				<text>When you cast Eldritch Blast, its range is 300 feet.</text>
+				<text />
+				<text>• Eyes of the Rune Keeper</text>
+				<text>You can read all writing. You can comprehend any written word or symbol, should it hold any linguistic meaning</text>
+				<text />
+				<text>• Fiendish Vigor</text>
+				<text>You can cast False Life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</text>
+				<text />
+				<text>• Gaze of Two Minds</text>
+				<text>You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.</text>
+				<text />
+				<text>• Gift of the Ever-Living Ones</text>
+				<text>Prerequisite: Pact of The Chain feature</text>
+				<text>Whenever you regain hit points while your familiar is within 100 feet of you, treat any dice rolled to determine the hit points you regain as having rolled their maximum value for you.</text>
+				<text />
+				<text>• Grasp of Hadar</text>
+				<text>Prerequisite: Eldritch Blast cantrip</text>
+				<text>Once on each of your turns when you hit a creature with your eldritch blast, you can move that creature in a straight line 10 feet closer to you.</text>
+				<text />
+				<text>• Improved Pact Weapon</text>
+				<text>Prerequisite: Pact of the Blade feature</text>
+				<text>You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your warlock spells. In addition, the weapon gains a +1 bonus to its attack and damage rolls, unless it is a magic weapon that already has a bonus to those rolls. Finally, the weapon you conjure can be a shortbow, longbow, light crossbow, or heavy crossbow.</text>
+				<text />
+				<text>• Lance of Lethargy</text>
+				<text>Prerequisite: Eldritch Blast cantrip</text>
+				<text>Once on each of your turns when you hit a creature with your eldritch blast, you can reduce that creature's speed by 10 feet until the end of your next turn.</text>
+				<text />
+				<text>• Mask of Many Faces</text>
+				<text>You can cast Disguise Self at will, without expending a spell slot.</text>
+				<text />
+				<text>• Misty Visions</text>
+				<text>You can cast Silent Image at will, without expending a spell slot or material components.</text>
+				<text />
+				<text>• Repelling Blast</text>
+				<text>Prerequisite: Eldritch Blast cantrip</text>
+				<text>When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line.</text>
+				<text />
+				<text>• Thief of Five Fates</text>
+				<text>You can cast Bane once using a warlock spell slot. You can't do so again until you finish a long rest.</text>
+				<text />
+				<text>• Voice of the Chain Master</text>
+				<text>Prerequisite: Pact of the Chain feature</text>
+				<text>You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech.</text>
+				<text />
+				<text />
+				<text>LEVEL 5</text>
+				<text>• Cloak of Flies</text>
+				<text>Prerequisite: 5th level</text>
+				<text>As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're incapacitated or you dismiss it as a bonus action.</text>
+				<text>The aura grants you advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any other creature that starts its turn in the aura takes poison damage equal to your Charisma modifier (minimum of 0 damage).</text>
+				<text>Once you use this invocation, you can't use it again until you finish a short or long rest.</text>
+				<text />
+				<text>• Eldritch Smite</text>
+				<text>Prerequisite: 5th level, Pact of the Blade feature</text>
+				<text>Once per turn when you hit a creature with your pact weapon, you can expend a warlock spell slot to deal an extra 1d8 force damage to the target, plus another 1d8 per level of the spell slot, and you can knock the target prone if it is Huge or smaller.</text>
+				<text />
+				<text>• Gift of the Depths</text>
+				<text>Prerequisite: 5th level</text>
+				<text>You can breathe underwater, and you gain a swimming speed equal to your walking speed.</text>
+				<text>You can also cast Water Breathing once without expending a spell slot. You regain the ability to do so when you finish a long rest.</text>
+				<text />
+				<text>• Maddening Hex</text>
+				<text>Prerequisite: 5th level, Hex spell or a warlock feature that curses</text>
+				<text>As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice that you can see within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you.</text>
+				<text />
+				<text>• Mire the Mind</text>
+				<text>Prerequisite: 5th level</text>
+				<text>You can cast Slow once using a warlock spell slot. You can't do so again until you finish a long rest.</text>
+				<text />
+				<text>• One with Shadows</text>
+				<text>Prerequisite: 5th level</text>
+				<text>When you are in an area of dim light or darkness, you can use your action to become invisible until you move, take an action or a reaction.</text>
+				<text />
+				<text>• Sign of Ill Omen</text>
+				<text>Prerequisite: 5th level</text>
+				<text>You can cast Bestow Curse once using a warlock spell slot. You can't do so again until you finish a long rest.</text>
+				<text />
+				<text>• Thirsting Blade</text>
+				<text>Prerequisite: 5th level, Pact of the Blade feature</text>
+				<text>You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.</text>
+				<text />
+				<text>• Tomb of Levistus</text>
+				<text>Prerequisite: 5th level</text>
+				<text>As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your speed is reduced to 0, and you are incapacitated. These effects, including any remaining temporary hit points, all end when the ice melts.</text>
+				<text>Once you use this invocation, you can't use it again until you finish a short or long rest.</text>
+				<text />
+				<text />
+				<text>LEVEL 7</text>
+				<text>• Bewitching Whispers</text>
+				<text>Prerequisite: 7th level</text>
+				<text>You can cast Compulsion once using a warlock spell slot. You can't do so again until you finish a long rest.</text>
+				<text />
+				<text>• Dreadful Word</text>
+				<text>Prerequisite: 7th level</text>
+				<text>You can cast Confusion once using a warlock spell slot. You can't do so again until you finish a long rest.</text>
+				<text />
+				<text>• Ghostly Gaze</text>
+				<text>Prerequisite: 7th level</text>
+				<text>As an action, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have darkvision if you don't already have it. This special sight lasts for 1 minute or until your concentration ends (as if you were concentrating on a spell). During that time, you perceive objects as ghostly, transparent images.</text>
+				<text>Once you use this invocation, you can't use it again until you finish a short or long rest.</text>
+				<text />
+				<text>• Relentless Hex</text>
+				<text>Prerequisite: 7th level, Hex spell or a warlock feature that curses</text>
+				<text>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target.</text>
+				<text />
+				<text>• Sculptor of Flesh</text>
+				<text>Prerequisite: 7th level</text>
+				<text>You can cast Polymorph once using a warlock spell slot. You can't do so again until you finish a long rest.</text>
+				<text />
+				<text>• Trickster's Escape</text>
+				<text>Prerequisite: 7th level</text>
+				<text>You can cast Freedom of Movement once on yourself without expending a spell slot. You regain the ability to do so when you finish a long rest.</text>
+				<text />
+				<text />
+				<text>LEVEL 9</text>
+				<text>• Ascendant Step</text>
+				<text>Prerequisite: 9th level</text>
+				<text>You can cast Levitate on yourself at will, without expending a spell slot or material components.</text>
+				<text />
+				<text>• Minions of Chaos</text>
+				<text>Prerequisite: 9th level</text>
+				<text>You can cast Conjure Elemental once using a warlock spell slot. You can't do so again until you finish a long rest.</text>
+				<text />
+				<text>• Otherworldly Leap</text>
+				<text>Prerequisite: 9th level</text>
+				<text>You can cast Jump on yourself at will, without expending a spell slot or material components.</text>
+				<text />
+				<text>• Whispers of the Grave</text>
+				<text>Prerequisite: 9th level</text>
+				<text>You can cast Speak with Dead at will, without expending a spell slot.</text>
+				<text />
+				<text />
+				<text>LEVEL 12</text>
+				<text>• Lifedrinker</text>
+				<text>Prerequisite: 12th level, Pact of the Blade feature</text>
+				<text>When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1).</text>
+				<text />
+				<text />
+				<text>LEVEL 15</text>
+				<text>• Chains of Carceri</text>
+				<text>Prerequisite: 15th level, Pact of the Chain feature</text>
+				<text>You can cast Hold Monster at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again.</text>
+				<text />
+				<text>• Master of Myriad Forms</text>
+				<text>Prerequisite: 15th level</text>
+				<text>You can cast Alter Self at will, without expending a spell slot.</text>
+				<text />
+				<text>• Shroud of Shadow</text>
+				<text>Prerequisite: 15th level</text>
+				<text>You can cast Invisibility at will, without expending a spell slot.</text>
+				<text />
+				<text>• Visions of Distant Realms</text>
+				<text>Prerequisite: 15th level</text>
+				<text>You can cast Arcane Eye at will, without expending a spell slot</text>
+				<text />
+				<text>• Witch Sight</text>
+				<text>Prerequisite: 15th level</text>
+				<text>You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="3">
+			<asi>0</asi>
+			<prof_bonus>2</prof_bonus>
+			<invocations_known>2</invocations_known>
+			<slots>2,0,2,0,0,0</slots>
+			<spells_known>4</spells_known>
+            <feature>
+                <name>Pact Boon</name>
+                <text>• Pact of the Chain</text>
+                <text>You learn the find familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.</text>
+                <text>  When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</text>
+                <text>  Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to use its reaction to make one attack of its own.</text>
+                <text />
+                <text>• Pact of the Blade</text>
+                <text>You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</text>
+                <text>  Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</text>
+                <text>  You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.</text>
+                <text />
+                <text>• Pact of the Tome</text>
+                <text>Your patron gives you a grimoire called a Book of Shadows.</text>
+                <text>  When you gain this feature, choose three cantrips from any class's spell list. The cantrips do not need to be from the same spell list.</text>
+                <text>  While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. Any cantrip you cast with this feature is considered a warlock cantrip for you.</text>
+                <text>  If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book.</text>
+                <text>  The book turns to ash when you die.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="4">
+			<asi>1</asi>
+			<prof_bonus>2</prof_bonus>
+			<invocations_known>2</invocations_known>
+			<slots>3,0,2,0,0,0</slots>
+			<spells_known>5</spells_known>
+        </autolevel>
+        
+        <autolevel level="5">
+			<asi>1</asi>
+			<prof_bonus>3</prof_bonus>
+			<invocations_known>3</invocations_known>
+			<slots>3,0,0,2,0,0</slots>
+			<spells_known>6</spells_known>
+        </autolevel>
+
+        <autolevel level="6">
+			<asi>1</asi>
+			<prof_bonus>3</prof_bonus>
+			<invocations_known>3</invocations_known>
+			<slots>3,0,0,2,0,0</slots>
+			<spells_known>7</spells_known>
+			<feature subclass="Otherworldly Patron: The Archfey">
+				<name>Misty Escape</name>
+                <text>Starting at 6th level, you can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next turn or until you attack or cast a spell.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a short or long rest.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Fiend">
+				<name>Dark One's Own Luck</name>
+                <text>Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a short or long rest</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Great Old One">
+				<name>Entropic Ward</name>
+                <text>At 6th level, you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a short or long rest.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Undying">
+				<name>Defy Death</name>
+                <text>Starting at 6th level, you can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to 1d8 + your Constitution modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with spare the dying.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a long rest.</text>
+            </feature>
+			<feature subclass="Otherwordly Patron: The Hexblade">
+				<name>Accursed Specter</name>
+				<text>Starting at 6th level, when you slay a humanoid, you can cause its spirit to rise from its corpse as a specter, the statistics for which are in the Monster Manual. When the specter appears, it gains temporary hit points equal to half your warlock level. Roll initiative for the specter which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack rolls equal to your Charisma modifier (minimum of +0). The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife. Once you bind a specter with this feature, you can't use the feature again until you finish a long rest.</text>
+			</feature>
+			<feature subclass="Otherwordly Patron: The Celestial">
+				<name>Radiant Soul</name>
+				<text>Starting at 6th level, you have resistance to radiant damage, and when you cast a spell that deals radiant or fire damage, you can add your Charisma modifier to one radiant or fire damage roll of that spell against one of its targets.</text>
+			</feature>
+        </autolevel>
+        
+        <autolevel level="7">
+			<asi>1</asi>
+			<prof_bonus>3</prof_bonus>
+			<invocations_known>4</invocations_known>
+			<slots>3,0,0,0,2,0</slots>
+			<spells_known>8</spells_known>
+        </autolevel>
+        
+        <autolevel level="8">
+			<asi>2</asi>
+			<prof_bonus>3</prof_bonus>
+			<invocations_known>4</invocations_known>
+			<slots>3,0,0,0,2,0</slots>
+			<spells_known>9</spells_known>
+        </autolevel>
+        
+        <autolevel level="9">
+			<asi>2</asi>
+			<prof_bonus>4</prof_bonus>
+			<invocations_known>5</invocations_known>
+			<slots>3,0,0,0,0,2</slots>
+			<spells_known>10</spells_known>
+        </autolevel>
+        
+        <autolevel level="10">
+			<asi>2</asi>
+			<prof_bonus>4</prof_bonus>
+			<invocations_known>5</invocations_known>
+			<slots>4,0,0,0,0,2</slots>
+			<spells_known>10</spells_known>
+			<feature subclass="Otherworldly Patron: The Archfey">
+				<name>Beguiling Defenses</name>
+                <text>Beginning at 10th level, your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being charmed, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom saving throw against your warlock spell save DC or be charmed by you for 1 minute or until the creature takes any damage.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Fiend">
+				<name>Fiendish Resilience</name>
+                <text>Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Great Old One">
+				<name>Thought Shield</name>
+                <text>Starting at 10th level, your thoughts can't be read by telepathy or other means unless you allow it. You also have resistance to psychic damage, and whenever a creature deals psychic damage to you, that creature takes the same amount of damage that you do.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Undying">
+				<name>Undying Nature</name>
+                <text>Beginning at 10th level, you can hold your breath indefinitely, and you don't require food, water, or sleep, although you still require rest to reduce exhaustion and still benefit from finishing short and long rests.</text>
+                <text>    In addition, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged.</text>
+            </feature>
+			<feature subclass="Otherwordly Patron: The Hexblade">
+				<name>Armor of Hexes</name>
+				<text>At 10th level, if the target cursed by your Hexblade's Curse hits you with an attack roll, you can use your reaction to roll a d6. On a 4 or higher, the attack instead misses you, regardless of its roll.</text>
+			</feature>
+			<feature subclass="Otherwordly Patron: The Celestial">
+				<name>Celestial Resilience</name>
+				<text>Starting at 10th level, you gain temporary hit points whenever you finish a short or long rest. These temporary hit points equal your warlock level + your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain temporary hit points equal to half your warlock level + your Charisma modifier.</text>
+			</feature>
+        </autolevel>
+        
+        <autolevel level="11">
+			<asi>2</asi>
+			<prof_bonus>4</prof_bonus>
+			<invocations_known>5</invocations_known>
+			<slots>4,0,0,0,0,3</slots>
+			<spells_known>11</spells_known>
+            <feature>
+                <name>Mystic Arcanum (6th level)</name>
+                <text>At level 11 your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.</text>
+                <text>    You can cast your 6th level Arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="12">
+			<asi>3</asi>
+			<prof_bonus>4</prof_bonus>
+			<invocations_known>6</invocations_known>
+			<slots>4,0,0,0,0,3</slots>
+			<spells_known>11</spells_known>
+        </autolevel>
+        
+        <autolevel level="13">
+			<asi>3</asi>
+			<prof_bonus>5</prof_bonus>
+			<invocations_known>6</invocations_known>
+			<slots>4,0,0,0,0,3</slots>
+			<spells_known>12</spells_known>
+            <feature>
+                <name>Mystic Arcanum (7th level)</name>
+                <text>At level 13 you get to choose one 7th-level spell from the warlock spell list as this arcanum.</text>
+				<text>    You can cast your 7th level Arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="14">
+			<asi>3</asi>
+			<prof_bonus>5</prof_bonus>
+			<invocations_known>6</invocations_known>
+			<slots>4,0,0,0,0,3</slots>
+			<spells_known>12</spells_known>
+			<feature subclass="Otherworldly Patron: The Archfey">
+				<name>Dark Delirium</name>
+                <text>Starting at 14th level, you can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is charmed or frightened by you (your choice) for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.</text>
+                <text>    Until this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.</text>
+                <text>    You must finish a short or long rest before you can use this feature again.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Fiend">
+				<name>Hurl Through Hell</name>
+                <text>Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.</text>
+                <text>    At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d 10 psychic damage as it reels from its horrific experience.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a long rest.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Great Old One">
+				<name>Create Thrall</name>
+                <text>At 14th level, you gain the ability to infect a humanoid's mind with the alien magic of your patron. You can use your action to touch an incapacitated humanoid. That creature is then charmed by you until a remove curse spell is cast on it, the charmed condition is removed from it, or you use this feature again.</text>
+                <text>    You can communicate telepathically with the charmed creature as long as the two of you are on the same plane of existence.</text>
+            </feature>
+			<feature subclass="Otherworldly Patron: The Undying">
+				<name>Indestructible Life</name>
+                <text>When you reach 14th level, you partake some of the true secrets of the Undying. On your turn, you can use a bonus action to regain hit points equal to 1d8 + your warlock level. Additionally, if you put a severed body part of yours back in place when you use this feature, the part reattaches.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a short or long rest.</text>
+            </feature>
+			<feature subclass="Otherwordly Patron: The Hexblade">
+				<name>Master of Hexes</name>
+				<text>Starting at 14th level, when the creature cursed by your Hexblade's Curse dies, you can apply the curse to a different creature you can see within 30 feet of you, provided you aren't incapacitated. When you apply the curse in this way, you don't regain hit points from the death of the previously cursed creature.</text>
+			</feature>
+			<feature subclass="Otherwordly Patron: The Celestial">
+				<name>Searing Vengeance</name>
+				<text>Starting at 14th level, when you have to make a death saving throw at the start of your turn, you can instead spring back to your feet. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to 2d8 + your Charisma modifier, and it is blinded until the end of the current turn.</text>
+				<text>Once you use this feature, you can't use it again until you finish a long rest.</text>
+			</feature>
+        </autolevel>
+        
+        <autolevel level="15">
+			<asi>3</asi>
+			<prof_bonus>5</prof_bonus>
+			<invocations_known>7</invocations_known>
+			<slots>4,0,0,0,0,3</slots>
+			<spells_known>13</spells_known>
+            <feature>
+                <name>Mystic Arcanum (8th level)</name>
+                <text>At level 15 you get to choose one 8th-level spell from the warlock spell list as this arcanum.</text>
+                <text>    You can cast your 8th level Arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.</text>
+			</feature>
+        </autolevel>
+        
+        <autolevel level="16">
+			<asi>4</asi>
+			<prof_bonus>5</prof_bonus>
+			<invocations_known>7</invocations_known>
+			<slots>4,0,0,0,0,3</slots>
+			<spells_known>13</spells_known>
+        </autolevel>
+        
+        <autolevel level="17">
+			<asi>4</asi>
+			<prof_bonus>6</prof_bonus>
+			<invocations_known>7</invocations_known>
+			<slots>4,0,0,0,0,4</slots>
+			<spells_known>14</spells_known>
+            <feature>
+                <name>Mystic Arcanum (9th level)</name>
+                <text>At level 15 you get to choose one 9th-level spell from the warlock spell list as this arcanum.</text>
+                <text>    You can cast your 9th level Arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.</text>
+			</feature>
+        </autolevel>
+        
+        <autolevel level="18">
+			<asi>4</asi>
+			<prof_bonus>6</prof_bonus>
+			<invocations_known>8</invocations_known>
+			<slots>4,0,0,0,0,4</slots>
+			<spells_known>14</spells_known>
+        </autolevel>
+        
+        <autolevel level="19">
+			<asi>5</asi>
+			<prof_bonus>6</prof_bonus>
+			<invocations_known>8</invocations_known>
+			<slots>4,0,0,0,0,4</slots>
+			<spells_known>15</spells_known>
+        </autolevel>
+        
+        <autolevel level="20">
+			<asi>5</asi>
+			<prof_bonus>6</prof_bonus>
+			<invocations_known>8</invocations_known>
+			<slots>4,0,0,0,0,4</slots>
+			<spells_known>15</spells_known>
+            <feature>
+                <name>Eldritch Master</name>
+                <text>At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again.</text>
+            </feature>
+        </autolevel>
+    </class>
+</compendium>

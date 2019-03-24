@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1"/>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/progression.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='functions.js') }}"></script>
+    </head>
+   <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" align="center" class="closebtn" onclick="closeNav()">&larr;</a>
+            <button class="dropdown_btn">Classes</button>
+                <div class="dropdown_container">
+                    <a href="/reference/classes/artificer">Artificer</a>
+                    <a href="/reference/classes/barbarian">Barbarian</a>
+                    <a href="/reference/classes/bard">Bard</a>
+                    <a href="/reference/classes/cleric">Cleric</a>
+                    <a href="/reference/classes/druid">Druid</a>
+                    <a href="/reference/classes/fighter">Fighter</a>
+                    <a href="/reference/classes/monk">Monk</a>
+                    <a href="/reference/classes/paladin">Paladin</a>
+                    <a href="/reference/classes/ranger">Ranger</a>
+                    <a href="/reference/classes/rogue">Rogue</a>
+                    <a href="/reference/classes/sorcerer">Sorcerer</a>
+                    <a href="/reference/classes/warlock">Warlock</a>
+                    <a href="/reference/classes/wizard">Wizard</a>
+                </div>                
+            <button class="dropdown_btn">Races</button>
+                <div class="dropdown_container">
+                    <a href="/reference/races/aarakocra">Aarakocra</a>
+                    <button class="dropdown_btn" id="sub-menu">Aasimar</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/aasimar_fallen">Fallen</a>
+                            <a id="sub-menu-link" href="/reference/races/aasimar_protector">Protector</a>
+                            <a id="sub-menu-link" href="/reference/races/aasimar_scourge">Scourge</a>
+                        </div>
+                    <a href="/reference/races/bugbear">Bugbear</a>
+                    <a href="/reference/races/dragonborn">Dragonborn</a>
+                    <button class="dropdown_btn" id="sub-menu">Dwarf</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/dwarf_hill">Hill</a>
+                            <a id="sub-menu-link" href="/reference/races/dwarf_mountain">Mountain</a>
+                            <a id="sub-menu-link" href="/reference/races/dwarf_duergar">Duergar</a>
+                        </div>
+                    <button class="dropdown_btn" id="sub-menu">Elf</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/elf_drow">Drow</a>
+                            <a id="sub-menu-link" href="/reference/races/elf_eladrin">Eladrin</a>
+                            <a id="sub-menu-link" href="/reference/races/elf_high">High</a>
+                            <a id="sub-menu-link" href="/reference/races/elf_wood">Wood</a>
+                        </div>
+                    <a href="/reference/races/firbolg">Firbolg</a>
+                    <button class="dropdown_btn" id="sub-menu">Genasi</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/genasi_air">Air</a>
+                            <a id="sub-menu-link" href="/reference/races/genasi_earth">Earth</a>
+                            <a id="sub-menu-link" href="/reference/races/genasi_fire">Fire</a>
+                            <a id="sub-menu-link" href="/reference/races/genasi_water">Water</a>
+                        </div>
+                    <button class="dropdown_btn" id="sub-menu">Gnome</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/gnome_deep">Deep</a>
+                            <a id="sub-menu-link" href="/reference/races/gnome_forest">Forest</a>
+                            <a id="sub-menu-link" href="/reference/races/gnome_rock">Rock</a>
+                        </div>
+                    <a href="/reference/races/goblin">Goblin</a>
+                    <a href="/reference/races/goliath">Goliath</a>
+                    <button class="dropdown_btn" id="sub-menu">Half-Elf</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/half_elf">Half-Elf</a>
+                            <a id="sub-menu-link" href="/reference/races/half_elf_wood_elf_descent">Wood</a>
+                            <a id="sub-menu-link" href="/reference/races/half_elf_drow_descent">Drow</a>
+                        </div>
+                    <a href="/reference/races/half_orc">Half-Orc</a>
+                    <button class="dropdown_btn" id="sub-menu">Halfling</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/halfling_lightfoot">Lightfoot</a>
+                            <a id="sub-menu-link" href="/reference/races/halfling_stout">Stout</a>
+                            <a id="sub-menu-link" href="/reference/races/halfling_ghostwise">Ghostwise</a>
+                        </div>
+                    <a href="/reference/races/hobgoblin">Hobgoblin</a>
+                    <button class="dropdown_btn" id="sub-menu">Human</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/human">Human</a>
+                            <a id="sub-menu-link" href="/reference/races/human_variant">Variant Human </a>
+                        </div>
+                    <a href="/reference/races/kenku">Kenku</a>
+                    <a href="/reference/races/kobold">Kobold</a>
+                    <a href="/reference/races/lizardfolk">Lizardfolk</a>
+                    <a href="/reference/races/orc">Orc</a>
+                    <button class="dropdown_btn" id="sub-menu">Shifter</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/shifter_razorclaw">Razorclaw</a>
+                            <a id="sub-menu-link" href="/reference/races/shifter_wildhunt">Wildhunt</a>
+                        </div>
+                    <a href="/reference/races/tabaxi">Tabaxi</a>
+                    <button class="dropdown_btn" id="sub-menu">Tiefling</button>
+                        <div class="dropdown_container">
+                            <a id="sub-menu-link" href="/reference/races/tiefling_infernal">Infernal</a>
+                            <a id="sub-menu-link" href="/reference/races/tiefling_feral">Feral</a>
+                        </div>
+                    <a href="/reference/races/triton">Triton</a>
+                    <a href="/reference/races/yuan_ti_pureblood">Yuan-ti Pureblood</a>
+            </div>
+            <a href="/reference/feats">Feats</a>
+            <button class="dropdown_btn">Spells
+            </button>
+            <div class="dropdown_container">
+                <button class="dropdown_btn" id="sub-menu">Class</button>
+                    <div class="dropdown_container">
+                        <a id="sub-menu-link" href="/reference/spells/class/Artificer">Artificer</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Bard">Bard</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Cleric">Cleric</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Druid">Druid</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Rogue">Fighter</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Paladin">Paladin</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Ranger">Ranger</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Sorcerer">Sorcerer</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Warlock">Warlock</a>
+                        <a id="sub-menu-link" href="/reference/spells/class/Wizard">Wizard</a> 
+                    </div>
+                <a href="/reference/spells/all">Level</a>
+                <button class="dropdown_btn" id="sub-menu">School</button>
+            </div>
+
+            <a href="/reference/bestiary">Bestiary</a>
+            <a href="/reference/encounters">Encounters</a>
+        </div>
+
+        <div class='menu-btn'>
+            <span onclick="openNav()">&#9776; Menu</span>
+        </div>
+        {% block content %}{% endblock%}
+        <script>
+            var dropdown = document.getElementsByClassName("dropdown_btn");
+            var i;
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+              } else {
+              dropdownContent.style.display = "block";
+              }
+              });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5">   
+    <class>
+        <name>Fighter</name>
+        <hd>10</hd>
+        <savingThrows>STR, CON</savingThrows>
+        <spellAbility>INT</spellAbility>
+
+        <autolevel level="0">
+            <feature>
+                <name>Starting Proficiencies</name>
+                <text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
+                <text>Armor: light armor, medium armor, heavy armor, shields</text>
+                <text>Weapons: simple weapons, martial weapons</text>
+                <text>Tools: none</text>
+                <text>Skills: Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival</text>
+            </feature>
+            <feature>
+                <name>Starting Equipment</name>
+                <text>You start with the following items, plus anything provided by your background.</text>
+                <text />
+                <text>• (a) chain mail or (b) leather, longbow, and 20 arrows</text>
+                <text>• (a) a martial weapon and a shield or (b) two martial weapons</text>
+                <text>• (a) a light crossbow and 20 bolts or (b) two handaxes</text>
+                <text>• (a) a dungeoneer's pack or (b) an explorer's pack</text>
+                <text />
+                <text>Alternatively, you may start with 5d4 x 10 gp to buy your own equipment.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="1">
+			<asi>0</asi>
+			<prof_bonus>2</prof_bonus>
+			<attacks>1</attacks>
+			<second_wind>0</second_wind>
+			<action_surge>0</action_surge>
+			<indomitable>0</indomitable>
+            <slots>-,-,-,-,-</slots>
+            <feature>
+                <name>Fighting Style</name>
+                <text>You adopt a particular style of fighting as your specialty. Choose a fighting style from the list of optional features. You can't take the same Fighting Style option more than once, even if you get to choose again.</text>
+                <text>• Archery</text>
+                <text>You gain a +2 bonus to attack rolls you make with ranged weapons.</text>
+                <text>• Defense</text>
+                <text>While you are wearing armor, you gain a +1 bonus to AC.</text>
+                <text>• Dueling</text>
+                <text>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</text>
+                <text>• Great Weapon Fighting</text>
+                <text>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</text>
+                <text>• Protection</text>
+                <text>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</text>
+                <text>• Two-Weapon Fighting</text>
+                <text>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</text>
+            </feature>
+            <feature>
+                <name>Second Wind</name>
+                <text>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.</text>
+                <text>Once you use this feature, you must finish a short or long rest before you can use it again.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="2">
+			<asi>0</asi>
+			<prof_bonus>2</prof_bonus>
+			<attacks>1</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>0</indomitable>
+            <slots>-,-,-,-,-</slots>
+            <feature>
+                <name>Action Surge</name>
+                <text>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</text>
+                <text>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="3">
+			<asi>0</asi>
+			<prof_bonus>2</prof_bonus>
+			<attacks>1</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>0</indomitable>
+            <slots>2,2,0,0,0</slots>
+            <feature>
+                <name>Martial Archetype</name>
+                <text>At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose Champion, Battle Master, or Eldritch Knight, all detailed at the end of the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Purple Dragon Knight">
+				<name>Restriction</name>
+                <text>Purple Dragon Knights are tied to a specific order of Cormyrean knighthood.</text>
+                <text>    Banneret serves as the generic name for this archetype if you use it in other campaign settings or to model warlords other than the Purple Dragon Knights.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Purple Dragon Knight">
+				<name>Rallying Cry</name>
+                <text>At 3rd level, when you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter level, provided that the creature can see or hear you.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Combat Superiority</name>
+                <text>When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice.</text>
+                <text />
+                <text>Maneuvers</text>
+                <text>You learn three maneuvers of your choice. You can use only one maneuver per attack.</text>
+                <text>    You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</text>
+                <text />
+                <text>• Commander's Strike</text>
+                <text>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll.</text>
+                <text>• Disarming Attack</text>
+                <text>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</text>
+                <text>• Distracting Strike</text>
+                <text>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</text>
+                <text>• Evasive Footwork</text>
+                <text>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</text>
+                <text>• Feinting Attack</text>
+                <text>You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll this turn against that creature. If that attack hits, add the superiority die to the attack's damage roll.</text>
+                <text>• Goading Attack</text>
+                <text>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</text>
+                <text>• Lunging Attack</text>
+                <text>When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll.</text>
+                <text>• Maneuvering Attack</text>
+                <text>When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</text>
+                <text>• Menacing Attack</text>
+                <text>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</text>
+                <text>• Parry</text>
+                <text>When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier</text>
+                <text>• Precision Attack</text>
+                <text>When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.</text>
+                <text>• Pushing Attack</text>
+                <text>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</text>
+                <text>• Rally</text>
+                <text>On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier.</text>
+                <text>• Riposte</text>
+                <text>When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.</text>
+                <text>• Sweeping Attack</text>
+                <text>When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack.</text>
+                <text>• Trip Attack</text>
+                <text>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</text>
+                <text />
+                <text>Superiority Dice</text>
+                <text>You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.</text>
+                <text>    You gain another superiority die at 7th level and one more at 15th level.</text>
+                <text />
+                <text>Saving Throws</text>
+                <text>Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows: Maneuver save DC = 8 + proficiency bonus + your Strength or Dexterity modifier (your choice)</text>
+            </feature>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Student of War</name>
+                <text>At 3rd level, you gain proficiency with one type of artisan's tools of your choice.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Champion">
+				<name>Improved Critical</name>
+                <text>Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Eldritch Knight">
+				<name>Spellcasting</name>
+                <text>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</text>
+                <text />
+                <text>Cantrips</text>
+                <text>You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level.</text>
+                <text />
+                <text>Spell Slots</text>
+                <text>The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</text>
+                <text>For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</text>
+                <text />
+                <text>Spells Known of 1st-Level and Higher</text>
+                <text>You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.</text>
+                <text>    The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</text>
+                <text>    The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</text>
+                <text>    Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you're replacing the spell you gained at 8th, 14th, or 20th level.</text>
+                <text />
+                <text>Spellcasting Ability</text>
+                <text>Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</text>
+                <text>    Spell save DC = 8 + your proficiency bonus + your Intelligence modifier</text>
+                <text>    Spell attack modifier = your proficiency bonus + your Intelligence modifier</text>
+            </feature>
+            <feature subclass="Martial Archetype: Eldritch Knight">
+				<name>Weapon Bond</name>
+                <text>At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.</text>
+                <text>    Once you have bonded a weapon to yourself, you can't be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</text>
+                <text>    You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.</text>
+            </feature>
+            <feature subclass="Martial Archetype: Cavalier">
+				<name>Bonus Proficiencies</name>
+                <text>At 3rd level, you gain proficiency in one of the following skills of your choice: Animal Handling, History, Insight, Performance, or Persuasion. Alternatively, you learn one language of your choice.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Cavalier">
+				<name>Born to the Saddle</name>
+                <text>Starting at 3rd level, you have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you're not incapacitated.</text>
+                <text>Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Cavalier">
+				<name>Unwavering Mark</name>
+                <text>Starting at 3rd level, when you hit a creature with a melee weapon attack, you can mark the creature until the end of your next turn. This effect ends early if you are incapacitated or you die, or if someone else marks the creature.</text>
+                <text>While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn't target you.</text>
+                <text>In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attack's weapon deals extra damage to the target equal to half your fighter level.</text>
+                <text />
+                <text>Regardless of the number of creatures you mark, you can make this special attack a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+                <name>Arcane Shot</name>
+                <text>At 3rd level, when you gain this feature, you learn two Arcane Shot options of your choice. Once per turn, when you fire an arrow from a shortbow or longbow as part of the Attack action, you can apply one of your Arcane Shot options to that arrow. You decide to use the option when the arrow hits a creature, unless the option doesn't involve an attack roll.</text>
+                <text>You have two uses of this ability, and you regain all expended uses of it when you finish a short or long rest. You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.</text>
+                <text />
+                <text>Arcane Shot Options</text>
+                <text>The options are all magical effects. If an option requires a saving throw, your Arcane Shot save DC equals [8 + your proficiency bonus + your Intelligence modifier].</text>
+                <text>    • Banishing Arrow: The creature hit by the arrow must also succeed on a Charisma saving throw or be banished. While banished in this way, the target's speed is 0, and it is incapacitated. At the end of its next turn, the target reappears in the space it vacated or in the nearest unoccupied space if that space is occupied. After you reach 18th level in this class, a target also takes 2d6 force damage when the arrow hits it.</text>
+                <text>    • Beguiling Arrow: The creature hit by the arrow takes an extra 2d6 psychic damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw. The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
+                <text>    • Bursting Arrow: Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take 2d6 force damage each. The force damage increases to 4d6 when you reach 18th level in this class.</text>
+                <text>    • Enfeebling Arrow: The creature hit by the arrow takes an extra 2d6 necrotic damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn. The necrotic damage increases to 4d6 when you reach 18th level in this class.</text>
+                <text>    • Grasping Arrow: The creature hit by the arrow is wreathed in brambles and takes an extra 2d6 poison damage, its speed is reduced by 10 feet, and it takes 2d6 slashing damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the brambles with a successful Strength (Athletics) check against your Arcane Shot save DC. Otherwise, the brambles last for 1 minute or until you use this option again. The poison damage and slashing damage both increase to 4d6 when you reach 18th level in this class.</text>
+                <text>    • Piercing Arrow: When you use this option, you don't make an attack roll for the attack. Instead, the arrow shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the arrow, plus an extra 1d6 piercing damage. On a successful save, a target takes half as much damage. The piercing damage increases to 2d6 when you reach 18th level in this class.</text>
+                <text>    • Seeking Arrow: When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The arrow flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the arrow to travel to the target, the target must make a Dexterity saving throw. Otherwise, the arrow disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the arrow, plus an extra 1d6 force damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location. The force damage increases to 2d6 when you reach 18th level in this class.</text>
+                <text>    • Shadow Arrow: The creature hit by the arrow takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn. The psychic damage increases to 4d6 when you reach 18th level in this class. </text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+				<name>Arcane Archer Lore</name>
+                <text>At 3rd level, you choose to gain proficiency in either the Arcana or the Nature skill, and you choose to learn either the Prestidigitation or the Druidcraft cantrip.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Samurai">
+				<name>Fighting Spirit</name>
+                <text>Starting at 3rd level, as a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level. You can use this feature three times, and you regain all expended uses of it when you finish a long rest.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Samurai">
+                <name>Bonus Proficiency</name>
+                <text>At 3rd level, you gain proficiency in one of the following skills of your choice: History, Insight, Performance, or Persuasion. Alternatively, you learn one language of your choice.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="4">
+			<asi>1</asi>
+			<prof_bonus>2</prof_bonus>
+			<attacks>1</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+            <slots>2,3,0,0,0</slots>
+			<indomitable>0</indomitable>
+        </autolevel>
+        
+        <autolevel level="5">
+			<asi>1</asi>
+			<prof_bonus>3</prof_bonus>
+			<attacks>2</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>0</indomitable>
+            <slots>2,3,0,0,0</slots>
+            <feature>
+                <name>Extra Attack</name>
+                <text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</text>
+                <text>    The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="6">
+			<asi>2</asi>
+			<prof_bonus>3</prof_bonus>
+			<attacks>2</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>0</indomitable>
+            <slots>2,3,0,0,0</slots>
+        </autolevel>
+        
+        <autolevel level="7">
+			<asi>2</asi>
+			<prof_bonus>3</prof_bonus>
+			<attacks>2</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>0</indomitable>
+            <slots>2,4,2,0,0</slots>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Additional Maneuvers</name>
+                <text>At 7th level, you learn two additional maneuvers of your choice, which are listed in the Fighter (Battle Master) spell list, as well as optional features at level 3.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Additional Superiority Die</name>
+                <text>You gain another superiority die at 7th level.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Know Your Enemy</name>
+                <text>If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:</text>
+                <text>• Strength score</text>
+                <text>• Dexterity score</text>
+                <text>• Constitution score</text>
+                <text>• Armor Class</text>
+                <text>• Current hit points</text>
+                <text>• Total class levels (if any)</text>
+                <text>• Fighter class levels (if any)</text>
+            </feature>
+			<feature subclass="Martial Archetype: Champion">
+				<name>Remarkable Athlete</name>
+                <text>Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.</text>
+                <text>    In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Eldritch Knight">
+				<name>War Magic</name>
+                <text>Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Purple Dragon Knight">
+				<name>Royal Envoy</name>
+                <text>A Purple Dragon Knight serves as an envoy of the Cormyrean crown. Knights of high standing are expected to conduct themselves with grace.</text>
+                <text>    At 7th level, you gain proficiency in the Persuasion skill. If you are already proficient in it, you gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.</text>
+                <text>    Your proficiency bonus is doubled for any ability check you make that uses Persuasion. You receive this benefit regardless of the skill proficiency you gain from this feature.</text>
+            </feature>
+            <feature subclass="Martial Archetype: Cavalier">
+				<name>Warding Maneuver</name>
+                <text>At 7th level, if you or a creature you can see within 5 feet of you is hit by an attack, you can roll 1d8 as a reaction if you're wielding a melee weapon or a shield. Roll the die, and add the number rolled to the target's AC against that attack. If the attack still hits, the target has resistance against the attack's damage. You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+				<name>Magic Arrow</name>
+                <text>At 7th level, whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+				<name>Arcane Shot Option</name>
+                <text>You gain an additional Arcane Shot option (3 total).</text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+                <name>Curving Shot</name>
+                <text>At 7th level, when you make an attack roll with a magic arrow and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target.</text>            
+            </feature>
+			<feature subclass="Martial Archetype: Samurai">
+				<name>Elegant Courtier</name>
+                <text>Starting at 7th level, whenever you make a Charisma (Persuasion) check, you gain a bonus to the check equal to your Wisdom modifier. You also gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="8">
+			<asi>3</asi>
+			<prof_bonus>3</prof_bonus>
+			<attacks>2</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>0</indomitable>
+            <slots>2,4,2,0,0</slots>
+        </autolevel>
+        
+        <autolevel level="9">
+			<asi>3</asi>
+			<prof_bonus>4</prof_bonus>
+			<attacks>2</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>1</indomitable>
+            <slots>2,4,2,0,0</slots>
+            <feature>
+                <name>Indomitable</name>
+                <text>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.</text>
+                <text>    You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="10">
+			<asi>3</asi>
+			<prof_bonus>4</prof_bonus>
+			<attacks>2</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>1</indomitable>
+            <slots>3,4,3,0,0</slots>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Additional Maneuvers</name>
+                <text>At 10th level, you learn two additional maneuvers of your choice, which are listed in the Fighter (Battle Master) spell list, as well as optional features at level 3.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Improved Combat Superiority (d10)</name>
+                <text>At 10th level, your superiority dice turn into d10s.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Champion">
+				<name>Additional Fighting Style</name>
+                <text>At 10th level, you can choose a second option from the Fighting Style class feature.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Eldritch Knight">
+				<name>Additional Cantrip</name>
+                <text>You learn an additional wizard cantrip of your choice at 10th level.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Eldritch Knight">
+				<name>Eldritch Strike</name>
+                <text>At 10th level, you learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Purple Dragon Knight">
+				<name>Inspiring Surge</name>
+                <text>Starting at 10th level, when you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you. Starting at 18th level, you can choose two allies within 60 feet of you, rather than one.</text>
+                <text>Starting at 18th level, you can choose two allies within 60 feet of you, rather than one.</text>
+            </feature>
+            <feature subclass="Martial Archetype: Cavalier">
+				<name>Hold the Line</name>
+                <text>At 10th level, creatures provoke an opportunity attack from you when they move 5 feet or more while within your reach, and if you hit a creature with an opportunity attack, you can reduce the target's speed to 0 until the end of the current turn.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+				<name>Arcane Shot Option</name>
+                <text>You gain an additional Arcane Shot option (4 total).</text>
+            </feature>
+			<feature subclass="Martial Archetype: Samurai">
+				<name>Tireless Spirit</name>
+                <text>Starting at 10th level, when you roll initiative and have no uses of Fighting Spirit remaining, you regain one use.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="11">
+			<asi>3</asi>
+			<prof_bonus>4</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>1</indomitable>
+            <slots>3,4,3,0,0</slots>
+        </autolevel>
+        
+        <autolevel level="12">
+			<asi>4</asi>
+			<prof_bonus>4</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>1</indomitable>
+            <slots>3,4,3,0,0</slots>
+        </autolevel>
+        
+        <autolevel level="13">
+			<asi>4</asi>
+			<prof_bonus>5</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>2</indomitable>
+            <slots>3,4,3,2,0</slots>
+        </autolevel>
+        
+        <autolevel level="14">
+			<asi>4</asi>
+			<prof_bonus>5</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>2</indomitable>
+            <slots>3,4,3,2,0</slots>
+        </autolevel>
+        
+        <autolevel level="15">
+			<asi>4</asi>
+			<prof_bonus>5</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>2</indomitable>
+            <slots>3,4,3,2,0</slots>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Additional Maneuvers</name>
+                <text>At 15th level, you learn two additional maneuvers of your choice, which are listed in the Fighter (Battle Master) spell list, as well as optional features at level 3.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Additional Superiority Die</name>
+                <text>You gain another superiority die at 15th level.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Relentless</name>
+                <text>Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Champion">
+				<name>Superior Critical</name>
+                <text>Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Eldritch Knight">
+				<name>Arcane Charge</name>
+                <text>At 15th level, you gain the ability to teleport up to 30 feet to an unoccupied space you can see when you use your Action Surge. You can teleport before or after the additional action.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Purple Dragon Knight">
+				<name>Bulwark</name>
+                <text>Beginning at 15th level, when you decide to use Indomitable to reroll an Intelligence, a Wisdom, or a Charisma saving throw and you aren't incapacitated, you can choose one ally within 60 feet of you that also failed its saving throw against the same effect. If that creature can see or hear you, it can reroll its saving throw and must use the new roll.</text>
+            </feature>
+    			<feature subclass="Martial Archetype: Cavalier">
+				<name>Ferocious Charger</name>
+                <text>Starting at 15th level, if you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this feature only once on each of your turns.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+				<name>Ever-Ready Shot</name>
+                <text>Starting at 15th level, if you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+				<name>Arcane Shot Option</name>
+                <text>You gain an additional Arcane Shot option (5 total).</text>
+            </feature>
+			<feature subclass="Martial Archetype: Samurai">
+				<name>Rapid Strike</name>
+                <text>Starting at 15th level, if you take the Attack action on your turn and have advantage on an attack roll against one of the targets, you can forgo the advantage for that roll to make an additional weapon attack against that target, as part of the same action. You can only do so once per turn.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="16">
+			<asi>5</asi>
+			<prof_bonus>5</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>1</action_surge>
+			<indomitable>2</indomitable>
+            <slots>3,4,3,3,0</slots>
+        </autolevel>
+        
+        <autolevel level="17">
+			<asi>5</asi>
+			<prof_bonus>6</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>2</action_surge>
+			<indomitable>3</indomitable>
+            <slots>3,4,3,3,0</slots>
+        </autolevel>
+        
+        <autolevel level="18">
+			<asi>5</asi>
+			<prof_bonus>6</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>2</action_surge>
+			<indomitable>3</indomitable>
+            <slots>3,4,3,3,0</slots>
+			<feature subclass="Martial Archetype: Battle Master">
+				<name>Improved Combat Superiority (d12)</name>
+                <text>At 18th level, your superiority dice turn into d12s.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Champion">
+				<name>Survivor</name>
+                <text>At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Eldritch Knight">
+				<name>Improved War Magic</name>
+                <text>Starting at 18th level, when you use your action to cast a spell, you can make one weapon attack as a bonus action.</text>
+            </feature>
+            <feature subclass="Martial Archetype: Arcane Archer">
+				<name>Deadly Arrow</name>
+                <text>At 18th level, your Arcane Arrow's bonus damage increases to 4d6 force damage.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Arcane Archer">
+				<name>Arcane Shot Option</name>
+                <text>You gain an additional Arcane Shot option (6 total).</text>
+            </feature>
+			<feature subclass="Martial Archetype: Cavalier">
+				<name>Vigilant Defender</name>
+                <text>Starting at 18th level, in combat, you get a special reaction that you can take once on every creature's turn, except your turn. You can use this special reaction only to make an opportunity attack, and you can't use it on the same turn that you take your normal reaction.</text>
+            </feature>
+			<feature subclass="Martial Archetype: Samurai">
+				<name>Strength Before Death</name>
+                <text>Starting at 18th level, if you take damage that reduces you to 0 hit points and doesn't kill you outright, you can use your reaction to delay falling unconscious and immediately take an extra turn. While you have 0 hit points during that extra turn, taking damage causes death saving throw failures as normal, and three death saving throw failures can still kill you. When the extra turn ends, you fall unconscious if you still have 0 hit points.</text>
+                <text>Once you use this feature, you can't use it again until you finish a long rest.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="19">
+			<asi>6</asi>
+			<prof_bonus>6</prof_bonus>
+			<attacks>3</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>2</action_surge>
+			<indomitable>3</indomitable>
+            <slots>3,4,3,3,1</slots>
+        </autolevel>
+        
+        <autolevel level="20">
+			<asi>6</asi>
+			<prof_bonus>6</prof_bonus>
+			<attacks>4</attacks>
+			<second_wind>1</second_wind>
+			<action_surge>2</action_surge>
+			<indomitable>3</indomitable>
+            <slots>3,4,3,3,1</slots>
+        </autolevel>
+    </class>
+</compendium>

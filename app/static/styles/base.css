@@ -1,0 +1,362 @@
+
+  body {
+    font-family: "Helvetica", sans-serif;
+    background:#f8e9ae;
+    margin: 0em;
+    padding: 0em; 
+  }
+
+  #wrapper {
+    width: 70%;
+    font-style: inherit;
+    margin: auto;
+    margin-bottom: 2%;
+    background: #FFFACD;
+    overflow: hidden;
+    padding: 0.75em;
+    border: 1px solid #CD853F;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a, .dropdown_btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  
+  .sidenav a:hover, .dropdown_btn:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: relative;
+    top: 0;
+    right: 25px;
+    font-size: 2.5em;
+    margin-left: 50px;
+  }
+
+  .dropdown_container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+  #sub-menu {
+    font-size: 1em; 
+    margin-left: 20px;
+  }
+
+  .dropdown_container a {
+    font-size: 1em;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  table, th, td {
+    /* border: 1px solid #d4d4d4; */
+    border-collapse: collapse;
+    text-align: center;
+  }
+  th, td {
+    padding: 12px;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  td a {
+    color: #a47719;
+  }
+  
+  .beastbox {
+    font-family: Georgia, serif;
+  }
+
+  .beastbox h2 {
+    color:#580000;
+  }
+
+  .line_div {
+    border-top: solid 3px transparent;
+    /* border-left: solid 315px #a52a2a; */
+    border-bottom: solid 3px #a52a2a;
+    /* border-right: solid 315px transparent; */
+    margin: 5px 0px 5px 0px;
+  }
+
+  .beastbox ul {
+    padding-left: 5px;
+    margin: 0;
+  }
+  .beastbox li {
+    list-style-type: none;
+    color:#580000;
+    font-size: 1em;
+  }
+
+  .beastbox .statblock {
+    display: inline-block;
+    margin: 0px 30px 0px 30px;
+    text-align: center;
+  }
+
+  .beastbox .statblock_elem {
+    color:#580000;
+    font-size: 1em;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 30px 0px 45px;
+  }
+
+  .beastbox .actions_elem {
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  line-height: 1.5em;
+  }
+
+  .beastbox .base_elem {
+    font-size: 1em;
+  }
+
+  .beastbox .heading {
+    color:#580000;
+    font-size: 1.5em;  
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .beastbox p {
+    font-size: 1em;  
+  }
+
+  .image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+  }
+
+  .menu-btn {
+    font-size:1.9em;
+    cursor:pointer;
+    margin-left: 2%; 
+    padding: 5px;
+  }
+
+  h2 {
+    font-family: Georgia, serif;
+    color:#580000;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  h3 {
+    color:#580000;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    font-family: Georgia, serif;
+  }
+
+  hr {
+    margin: 2px;
+  }
+
+  .p-feat {
+    font-size: 1em;
+    font-family: Georgia, serif;
+    white-space: pre-wrap;
+    margin-left: 5px;
+  }
+
+
+@media (pointer:coarse) {
+  #wrapper {
+    width: 95%;
+    font-style: inherit;
+    margin: auto;
+    margin-bottom: 2em;
+    background: #FFFACD;
+    overflow: hidden;
+    padding: 14px;
+    border: 1px solid #CD853F;
+  }
+    
+  .sidenav a, .dropdown_btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 5em;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: center;
+    outline: none;
+  }
+
+  #sub-menu {
+    font-size: 3em; 
+    margin-left: 8em;
+    text-align: left;
+  }
+
+  #sub-menu-link {
+    margin-left: 9.5em;
+  }
+  .dropdown_container {
+    display: none;
+    background-color: #262626;
+  }
+  
+  .dropdown_container a {
+    font-size: 3em;
+    text-align: left;
+    margin-left: 8em;
+    }
+
+  .sidenav .closebtn {
+      position: relative;
+      top: 0;
+      font-size: 6em;
+  }
+   
+  table, th, td {
+      border-collapse: collapse;
+      text-align: center;
+      table-layout: fixed;
+    }
+  th, td {
+      padding: 0.5em;
+      font-size: 2em;
+      border-bottom: 1px solid #ddd;
+      overflow: hidden; 
+  }
+
+  td a {
+      color: #a47719;
+  }
+
+  .beastbox h2 {
+  color:#580000;
+  font-size: 4.3em;
+  }
+
+  .beastbox ul {
+    padding-left: 0.5em;
+    margin: 0;
+  }
+  .beastbox li {
+    list-style-type: none;
+    color:#580000;
+    font-size: 1.3em;
+  }
+
+  .beastbox .statblock {
+    display: inline-block;
+    margin: 0px 30px 0px 30px;
+    text-align: center;
+  }
+
+  .beastbox .statblock_elem {
+      color:#580000;
+      font-size: 2.3em;
+      display: inline-block;
+      text-align: center;
+      margin: 0px 1px 0px 30px;
+  }
+
+  .beastbox .actions_elem {
+      box-sizing: border-box;
+      color: rgb(0, 0, 0);
+      font-family: Georgia, serif;
+      font-size: 2em;
+      line-height: 2em;
+  }
+
+  .beastbox .base_elem {
+      font-family: Georgia, serif;
+      font-size: 2em;
+  }
+
+  .beastbox .heading {
+      color:#580000;
+      font-family: Georgia, serif;
+      font-size: 1.8em;  
+      font-weight: bold;
+      text-align: center;
+  }
+
+  .line_div {
+    border-top: solid 3px #a52a2a;
+    border-left: solid 315px #a52a2a;
+    border-bottom: solid 3px #a52a2a;
+    margin: 20px 5px 20px 0px;
+  }
+
+  .beastbox p {
+    font-size: 1.3em;
+  }
+
+  .menu-btn {
+      font-size:2.5em;
+      margin-left: 2%; 
+      padding: 5px;
+  }
+
+  h2 {
+    color:#580000;
+    font-family: Georgia, serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+
+  h3 {
+      color:#580000;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 2px;
+      margin-left: 5px;
+      font-family: Georgia, serif;
+  }
+
+  hr {
+      margin: 2px;
+  }
+ 
+  .p-feat {
+    font-size: 2em;
+    font-family: Georgia, serif;
+    white-space: pre-wrap;
+    margin-left: 5px;
+}
+
+  .hide-mobile {
+    display: none;
+  }
+  
+}

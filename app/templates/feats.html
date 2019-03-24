@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Feats{% endblock %}
+{% block content %}
+<div id="wrapper">
+    <h2 style="text-align: center;">Feats</h2>
+    <div class="line_div"></div>
+    <div>
+        {% for i in data %}
+            <h3><b>{{i['name']}}</b></h3>
+            <hr>
+            <p class="p-feat">{{i['text']}}</p>
+        {% endfor %}
+    <div class="line_div"></div>
+</div>
+{% endblock %}

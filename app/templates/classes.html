@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Classes{% endblock %}
+{% block content %}
+<div id="wrapper">
+    <h2>{{data.heading}}</h2>
+    <table style="width:100%">
+        <tr>
+            <th>Class</th>
+            <th>Subclass</th> 
+        </tr>
+        {% for k,v in data.data.items() %}
+        <tr>
+            <td style="font-weight: bold;" align="center" rowspan="{{v|length+1}}">{{k}}</td>
+        </tr>
+            {% for i in v %}
+            <tr>
+                <td align="center"><a href="/reference/classes/{{i[1]}}">{{i[0]}}</td>
+            </tr>
+            {% endfor %}
+        {% endfor %}
+</div>
+{% endblock %}

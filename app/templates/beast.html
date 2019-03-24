@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}{{data['Full Name'].title()}}{% endblock %}
+{% block content %}
+    <div id="wrapper" class="beastbox">
+        <h2 style="text-align: center;">{{data['Full Name'].upper()}}</h2>
+        <div class="base_elem" style="font-style: italic; font-weight: bold; text-align: center;">
+            {{data['Alignment'].title()}}
+            <span>{{data['Type'].title()}};</span>
+            <span>{{data['Challenge'][0]}}</span>
+        </div>
+        <div class="line_div"></div>
+        <div class="base_elem">
+            <ul>
+                <li><b>Size:</b>
+                    <span>{{data['Size'].title()}}</span>
+                </li>
+                <li><b>Armor:</b>
+                    <span>{{data['AC']}} ({{data["AC Type"].title()}})</span>
+                </li>
+                <li><b>Hit Points:</b>
+                    <span>{{data['HP']}} ({{data['HP Dice']}})</span>
+                </li>
+                <li><b>Speed:</b>
+                    {% for k,v in data['Speed'].items() %}
+                        <span><b>{{k.title()}}:</b> <i>{{v}}</i> </span>
+                    {% endfor %}
+                </li>
+            </ul>
+        </div>
+        <div class="line_div"></div>
+        <div class="statblock">
+            {% for k,v in data["Stats"].items() %}
+                <div class="statblock_elem">
+                    <span><b>{{k}}</b>  </span>
+                    <br>
+                    <span>{{v}} ({{data["statMods"][k]}})</span>
+                </div>
+            {% endfor %}      
+        </div>
+        <div class="line_div"></div>
+        <div class="actions_elem">
+            <ul>
+                {% for k,v in data["details"].items() %}
+                    {% if k == "Traits" %}
+                        {% for i,j in data["details"]["Traits"].items() %}
+                            <li><b>{{i.title()}}: </b>
+                                <span>{{j}}</span>
+                            </li>
+                        {% endfor %}
+                    {% else %}
+                            <li><b>{{k.title()}}: </b>
+                                <span>{{v|join(", ")}}</span>
+                            </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="line_div"></div>
+        <div class="actions_elem">
+            <div class="heading" style="padding-bottom: 0.25em;">Actions:</div>
+            <hr>
+            <ul>
+                {% for k,v in data["Actions"].items() %}
+                <li><b>{{k.title()}}:</b>
+                    <span>{{v}}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% if data["Legendary Actions"] %}
+        <div class="line_div"></div>
+            <div class="actions_elem">
+                <div class="heading" style="padding-bottom: 0.25em;">Legendary Actions:</div>
+                <hr>
+                <ul>
+                    {% for k,v in data["Legendary Actions"].items() %}
+                        <li><b>{{k.title()}}: </b>
+                            <span>{{v}}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        <div class="line_div"></div>
+    </div>        
+{% endblock %}

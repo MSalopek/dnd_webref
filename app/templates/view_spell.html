@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Spell:{{data['name'].title()}}{% endblock %}
+{% block content %}
+<div id="wrapper" class="beastbox">
+    <h2 style="text-align: center;">{{data['name'].title()}}</h2>
+    <div class="heading" style="font-style: italic; color:black;">
+        {% if data['level'] == 0 %}
+            {{data['school']}} Cantrip
+        {% else %}
+            Level {{data["level"]}}
+            <span>{{data["school"]}}</span>
+        {% endif %}
+    </div>
+    <div class="line_div"></div>
+    <div class="base_elem">
+        <ul>
+            <li><b>Components:</b>
+                <span>{{data['components']}}</span>
+            </li>
+            <li><b>Time:</b>
+                <span>{{data['time']}}</span>
+            </li>
+            <li><b>Duration:</b>
+                <span>{{data['duration']}}</span>
+            </li>
+            <li><b>Range:</b>
+                <span>{{data['_range']}}</span>
+            </li>
+            <li><b>Classes:</b>
+                <span>{{data["classes"]}}</span>
+            </li>
+            <li><b>Ritual:</b>
+                <span>{{data["ritual"].title()}}</span>
+            </li>
+            <li><b>Concentration:</b>
+                <span>{{data["concentration"].title()}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="line_div"></div>
+    <div class="base_elem">
+        <p style="white-space: pre-wrap;">{{data["_text"]}}</p>
+    </div>
+    <div class="line_div"></div>
+</div>
+{% endblock %}

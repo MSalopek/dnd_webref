@@ -1,0 +1,82 @@
+{% extends "base_alter.html" %}
+{% block title %}{{cls_name}}{% endblock %}
+{% block content %}
+<div id="wrapper">
+    <div>
+        <h1 style="text-align: center;">{{cls_name}} Progression</h1>
+    </div>
+    <div class="line_div"></div>
+    <div id="inner-table">
+        <table style="float:left; margin-right: 0px;">
+            <tr>
+                <th>Level</th>
+                {% for i in col_names %}
+                    {% if i != "slots" %}
+                        {% if i == "asi" %}
+                            <th>{{i.upper()}}</th>
+                        {% elif i == "prof_bonus" %}
+                            <th>Prof.</th>
+                        {% else %}
+                            <th>{{i.replace("_", " ").title()}}</th>
+                        {% endif %}
+
+                    {% endif %}
+                {% endfor %}
+                </tr>
+                {% for k,v in prog_table.items() %}
+                    <tr>
+                        <td>{{k}}</td>
+                        {% for col_name in col_names %}
+                            {% if col_name != 'slots' %}
+                                {% if col_name == "prof_bonus" %}
+                                    <td>+{{v[col_name]}}</td>
+                                {% else %}
+                                    <td>{{v[col_name]}}</td>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}    
+        </table>      
+        <table style="margin-left:0px;"> 
+            <tr>
+                {% if "slots" in prog_table["1"] %}
+                    <td style="padding-right:10px; padding-left:10px;"><b>C</b></td>
+                {% endif %}
+                {% for i in range(1, prog_table["1"]['slots']| length) %}
+                    <td style="padding-right:10px; padding-left:10px;"><b>{{i}}</b></td>
+                {% endfor %}
+            </tr>
+            {% for v in prog_table.values() %}
+                <tr>
+                    {% for slot in v["slots"] %}
+                        <td style="padding-right:10px; padding-left:10px;">{{slot}}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="line_div"></div>
+    {% for k, v in base.items() %}
+        {% if k != name %}
+            <h3 style="margin: 0px;">{{k}}</h3>
+            <hr>
+            <p>{{v}}</p>
+            <br>
+        {% endif %}
+    {% endfor %}
+    <div class="line_div"></div>
+    {% for k,v in subclasses.items() %}
+        <h2 style="text-align: center;">{{k}}</h2>
+        <div class="line_div"></div>
+        {% for i in v %}
+                <h3 style="margin: 0px;">{{i[0]}}</h3>
+                <hr>
+                <p>{{i[1]}}</p>
+                <!-- <br> -->
+        {% endfor %}
+        <br>
+        <div class="line_div"></div>
+    {% endfor %}
+</div>
+{% endblock %}

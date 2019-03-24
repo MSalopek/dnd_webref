@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{data["name"]}}{% endblock %}
+{% block content %}
+<div id="wrapper" class="beastbox">
+    <div>
+        <h2 style="text-align: center;">{{data["name"].upper()}}</h1>
+    </div>
+    <div class="line_div"></div>
+    <div class="statblock" style="width: 100%; margin:auto;">
+        <div class="statblock_elem">
+            <span><b>Size</b></span>
+            <br>
+            <span>{{data["features"]["size"]}}</span></li>
+        </div>
+        <div class="statblock_elem">
+            <span><b>Speed</b></span>
+            <br>
+            <span>{{data["features"]["speed"]}}</span>
+        </div>
+        <div class="statblock_elem">
+            <span><b>Mods</b></span>
+            <br>
+            <span>{{data["features"]["ability"]}}</span>
+        </div>
+    </div>
+    <div class="line_div"></div>
+    <br>
+    {% for k,v in data["features"]["traits"].items() %}
+    <div class="actions_elem">
+    <h3 style="margin: 0px; color:#580000;">{{k}}</h3>
+    <hr>
+    <p style="margin-top: 0em; white-space: pre-wrap;">{{v}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
